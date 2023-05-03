@@ -4,4 +4,4 @@ L'integralité des activités du module 4 semestre 4, filière II-BDCC sous l'en
 
 ## Systèmes multi-agents
 
-- [Application 1 : Nombre Magique](./APP1_MagicNumber/README.md)
+- [Application 1 : Nombre Magique](./APP1_MagicNumber/Readme.md)
