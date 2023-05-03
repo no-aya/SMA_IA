@@ -1,1 +1,0 @@
-http://aya-laptop:7778/acc
