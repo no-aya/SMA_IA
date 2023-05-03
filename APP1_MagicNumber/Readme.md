@@ -1,10 +1,5 @@
 # Nombre magique : Application
 
----
-> Réalisé par : **AITOULAHYANE AYA**
->
->Classe : II-BDCC 2
----
 ## Description
 Jeu multi-joueurs, le but est de trouver un nombre magique.
 Ce nombre est généré par le serveur, entre 0 et 100.
@@ -13,6 +8,7 @@ Nosu utilisons ici la librairie Jade, pour mettre en pratique les notions de pro
 
 ## Demonstration 
 
+https://user-images.githubusercontent.com/106016869/235977932-56c3c770-4010-441a-9080-50eaba02c7f0.mp4
 
 ## Containers
 Les containers sont des environnements d'exécution pour les agents.
