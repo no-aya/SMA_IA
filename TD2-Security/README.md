@@ -62,7 +62,6 @@ public class ServerAgent extends Agent {
     }
 }
 ```
-
 - ServerContainer
 ```java
 public class ServerContainer {
@@ -78,7 +77,6 @@ public class ServerContainer {
 
 }
 ```
-
 - ClientAgent
 ```java
 public class ClientAgent extends Agent {
@@ -114,7 +112,6 @@ public class ClientAgent extends Agent {
     }
 }
 ```
-
 - ClientContainer
 ```java
 public class ClientContainer {
@@ -130,7 +127,6 @@ public class ClientContainer {
 }
 ```
 ### Résultat
-
 - ClientContainer
 
 ![img_1.png](screenshots/img_1.png)
@@ -142,18 +138,13 @@ public class ClientContainer {
 
 
 ## RSA
-
 ### Principe
-
 Le RSA (Rivest, Shamir et Adleman) est un algorithme de chiffrement asymétrique. Il est utilisé par exemple dans le protocole TLS (Transport Layer Security) pour sécuriser les échanges sur internet.
-
 ### Application
 
-Dans le package `rsa`, vous trouverez une implémentation du RSA comme ceci :
+Dans le package `rsa`, vous trouverez une implémentation du RSA comme ceci:
 
-
-Nous allons créer une classe `GenerateRSAKeys` pour générer les clés RSA
-
+> Nous allons créer une classe `GenerateRSAKeys` pour générer les clés RSA
 ```java
 public class GenerateRSAKeys {
     public static void main(String[] args) throws NoSuchAlgorithmException {
@@ -214,7 +205,6 @@ public class ServerAgent extends Agent {
             }
 }
 ```
-
 - ClientAgent
 ```java
 public class ClientAgent extends Agent {
@@ -267,8 +257,6 @@ public class ClientAgent extends Agent {
 ### Principe
 
 SHA256withRSA est un algorithme de signature numérique. Il est utilisé par exemple dans le protocole TLS (Transport Layer Security) pour sécuriser les échanges sur internet.
-
-
 ### Application
 
 Dans le package `signature`, vous trouverez une implémentation du SHA256withRSA comme ceci :
@@ -292,12 +280,8 @@ public class ServerAgent extends Agent {
                 if (aclMessage != null) {
                     String documentSign = aclMessage.getContent();
                     String[] documentSplit = documentSign.split("__.__");
-
-
                     byte[] decodedDocument = Base64.getDecoder().decode(documentSplit[0]);
-                    
                     byte[] decodedSign = Base64.getDecoder().decode(documentSplit[1]);
-
                     try {
                         KeyFactory keyFactory = KeyFactory.getInstance("RSA");
                         PublicKey publicKey = keyFactory.generatePublic(new X509EncodedKeySpec(decodePbk));
@@ -374,7 +358,6 @@ public class ClientAgent extends Agent {
     }
 }
 ```
-
 ### Résultat
 
 - ClientContainer
